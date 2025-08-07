@@ -124,4 +124,21 @@ All colors MUST be HSL.
     -webkit-mask-composite: source-over;
     display: block;
   }
+
+  /* Faint repeating brand icon background */
+  .brand-repeat { position: relative; }
+  .brand-repeat::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/lovable-uploads/1fe60cea-c857-471e-af8e-2623c1e6bd3a.png');
+    background-repeat: repeat;
+    background-size: 160px 160px;
+    background-position: top left;
+    opacity: 0.06; /* subtle, adjustable */
+    pointer-events: none;
+    z-index: 0;
+  }
+  .brand-repeat > * { position: relative; z-index: 1; }
 }
+

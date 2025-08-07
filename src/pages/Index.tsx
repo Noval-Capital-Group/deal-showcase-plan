@@ -29,9 +29,11 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <Portfolio />
-        <Bio />
-        <BookCall />
+        <div className="brand-repeat">
+          <Portfolio />
+          <Bio />
+          <BookCall />
+        </div>
       </main>
       <Footer />
     </>
