@@ -1,4 +1,6 @@
 import { Building2, BarChart3, LineChart, MapPin } from "lucide-react";
+import BlobMosaic from "./BlobMosaic";
+import portfolio1 from "@/assets/portfolio-1.jpg";
 
 interface DealCardProps {
   title: string;
@@ -33,12 +35,17 @@ const DealCard = ({ title, subtitle, metric, location }: DealCardProps) => (
 const Portfolio = () => {
   return (
     <section id="portfolio" className="container mx-auto px-4 py-20">
-      <header className="mb-10 max-w-3xl">
-        <h2 className="text-3xl font-bold md:text-4xl">Portfolio Highlights</h2>
-        <p className="mt-3 text-muted-foreground">
-          A selection of representative projects across development and value-add strategies.
-        </p>
-      </header>
+      <div className="mb-10 grid items-center gap-8 md:grid-cols-2">
+        <header className="max-w-xl">
+          <h2 className="text-3xl font-bold md:text-4xl">Portfolio Highlights</h2>
+          <p className="mt-3 text-muted-foreground">
+            A selection of representative projects across development and value-add strategies.
+          </p>
+        </header>
+        <div className="hidden md:block">
+          <BlobMosaic src={portfolio1} alt="Construction progress collage" />
+        </div>
+      </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <DealCard title="Parkside Townhomes" subtitle="Build-to-rent development" metric="2.1x" location="Nashville, TN" />

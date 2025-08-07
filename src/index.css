@@ -104,3 +104,24 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .blob {
+    position: relative;
+    isolation: isolate;
+  }
+  /* Multi-circle organic mask inspired by provided design */
+  .blob-mask {
+    -webkit-mask-image: radial-gradient(closest-side at 20% 28%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 70% 35%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 62% 74%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 30% 72%, #000 98%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 20% 28%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 70% 35%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 62% 74%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 30% 72%, #000 98%, transparent 100%);
+    mask-composite: add;
+    -webkit-mask-composite: source-over;
+    display: block;
+  }
+}

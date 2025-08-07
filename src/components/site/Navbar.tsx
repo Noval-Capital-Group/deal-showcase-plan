@@ -4,7 +4,10 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <a href="#" className="font-semibold">Noval Capital Group</a>
+        <a href="#" className="flex items-center gap-3">
+          <img src="/lovable-uploads/696a274e-a1f8-46b0-942a-40910dda93dd.png" alt="Noval Capital Group logo" className="h-8 w-8" />
+          <span className="font-semibold">Noval Capital Group</span>
+        </a>
         <div className="hidden items-center gap-6 sm:flex">
           <a href="#portfolio" className="text-sm text-muted-foreground hover:text-foreground">Portfolio</a>
           <a href="#about" className="text-sm text-muted-foreground hover:text-foreground">About</a>
