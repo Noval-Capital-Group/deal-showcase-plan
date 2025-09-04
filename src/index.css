@@ -113,18 +113,89 @@ All colors MUST be HSL.
   /* Multi-circle organic mask inspired by provided design */
   .blob-mask {
     -webkit-mask-image: radial-gradient(closest-side at 20% 28%, #000 98%, transparent 100%),
-      radial-gradient(closest-side at 70% 35%, #000 98%, transparent 100%),
-      radial-gradient(closest-side at 62% 74%, #000 98%, transparent 100%),
-      radial-gradient(closest-side at 30% 72%, #000 98%, transparent 100%);
+      radial-gradient(closest-side at 70% 40%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 86% 81%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 30% 61%, #000 9%, transparent 100%);
     mask-image: radial-gradient(closest-side at 20% 28%, #000 98%, transparent 100%),
-      radial-gradient(closest-side at 70% 35%, #000 98%, transparent 100%),
-      radial-gradient(closest-side at 62% 74%, #000 98%, transparent 100%),
-      radial-gradient(closest-side at 30% 72%, #000 98%, transparent 100%);
+      radial-gradient(closest-side at 70% 40%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 86% 81%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 30% 61%, #000 9%, transparent 100%);
     mask-composite: add;
     -webkit-mask-composite: source-over;
     display: block;
   }
 
+  .blob-mask-1 {
+    -webkit-mask-image: radial-gradient(closest-side at 11% 14%, #000 98%, transparent 100%),
+        radial-gradient(closest-side at 73% 35%, #000 9%, transparent 100%),
+        radial-gradient(closest-side at 32% 54%, #000 98%, transparent 100%),
+        radial-gradient(closest-side at 83% 80%, #000 9%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 11% 14%, #000 98%, transparent 100%),
+        radial-gradient(closest-side at 73% 35%, #000 9%, transparent 100%),
+        radial-gradient(closest-side at 32% 54%, #000 98%, transparent 100%),
+        radial-gradient(closest-side at 83% 80%, #000 9%, transparent 100%);
+    mask-composite: add;
+    -webkit-mask-composite: source-over;
+    display: block;
+  }
+
+  .blob-mask-2 {
+    -webkit-mask-image: radial-gradient(closest-side at 24% 31%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 80% 26%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 17% 76%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 66% 59%, #000 98%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 24% 31%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 80% 26%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 17% 76%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 66% 59%, #000 98%, transparent 100%);
+    mask-composite: add;
+    -webkit-mask-composite: source-over;
+    display: block;
+  }
+
+  .blob-mask-3 {
+    -webkit-mask-image: radial-gradient(closest-side at 65% 43%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 19% 77%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 20% 27%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 78% 80%, #000 9%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 65% 43%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 19% 77%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 20% 27%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 78% 80%, #000 9%, transparent 100%);
+    mask-composite: add;
+    -webkit-mask-composite: source-over;
+    display: block;
+  }
+
+  .blob-mask-4 {
+    -webkit-mask-image: radial-gradient(closest-side at 33% 42%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 78% 33%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 18% 79%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 95% 93%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 78% 74%, #000 98%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 33% 42%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 78% 33%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 18% 79%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 95% 93%, #000 9%, transparent 100%),
+      radial-gradient(closest-side at 78% 74%, #000 98%, transparent 100%);
+    mask-composite: add;
+    -webkit-mask-composite: source-over;
+    display: block;
+  }
+
+  .blob-mask-5 {
+    -webkit-mask-image: radial-gradient(closest-side at 20% 25%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 80% 25%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 20% 75%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 80% 75%, #000 98%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 20% 25%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 80% 25%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 20% 75%, #000 98%, transparent 100%),
+      radial-gradient(closest-side at 80% 75%, #000 98%, transparent 100%);
+    mask-composite: add;
+    -webkit-mask-composite: source-over;
+    display: block;
+  }
   /* Faint repeating brand icon background */
   .brand-repeat { position: relative; }
   .brand-repeat::before {

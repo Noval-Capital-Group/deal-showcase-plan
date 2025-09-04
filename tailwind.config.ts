@@ -8,6 +8,13 @@ export default {
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
 	],
+	safelist: [
+		'blob-mask-1',
+		'blob-mask-2', 
+		'blob-mask-3',
+		'blob-mask-4',
+		'blob-mask-5'
+	],
 	prefix: "",
 	theme: {
 		container: {

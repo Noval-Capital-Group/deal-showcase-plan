@@ -11,9 +11,11 @@ interface DealRowProps {
   type: string;
   status: string;
   profit: string;
+  story: string;
   mainImage: string;
   thumbnails: string[];
   isReversed?: boolean;
+  rowIndex?: number;
 }
 
 const DealRow: React.FC<DealRowProps> = ({ 
@@ -22,9 +24,11 @@ const DealRow: React.FC<DealRowProps> = ({
   type, 
   status,
   profit,
+  story,
   mainImage, 
   thumbnails, 
-  isReversed = false 
+  isReversed = false,
+  rowIndex = 0
 }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -39,7 +43,7 @@ const DealRow: React.FC<DealRowProps> = ({
     <div className={`flex flex-col lg:flex-row gap-8 items-center ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
       {/* Main Image */}
       <div className="flex-1">
-        <BlobMosaic src={mainImage} alt={`${title} main view`} />
+        <BlobMosaic src={mainImage} alt={`${title} main view`} incIndex={rowIndex} />
       </div>
       
       {/* Content and Thumbnails */}
@@ -86,11 +90,19 @@ const DealRow: React.FC<DealRowProps> = ({
         {/* Profit Return Section */}
         <div className="pt-6 border-t border-border/50">
           <div className="text-center lg:text-left">
-            <p className="text-sm text-muted-foreground mb-2">Projected Return</p>
+            <p className="text-sm text-muted-foreground mb-2">Deal Returns</p>
             <p className="text-3xl md:text-4xl font-bold text-primary">{profit}</p>
           </div>
         </div>
         
+        {/* Story Section */}
+        <div className="pt-6 border-t border-border/50">
+          <div className="text-center lg:text-left">
+            <p className="text-sm text-muted-foreground mb-2">The Story Behind The Deal</p>
+            <p className="text-2xl md:text-2xl text-primary">{story}</p>
+          </div>
+        </div>
+
         {/* Lightbox */}
         <Lightbox
           open={lightboxOpen}
@@ -106,55 +118,79 @@ const DealRow: React.FC<DealRowProps> = ({
 const DealsGallery = () => {
   const deals = [
     {
-      title: "Modern Mixed-Use Development",
-      location: "Austin, Texas",
-      type: "Development",
-      status: "Active",
-      profit: "$150,000+",
-      mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-      thumbnails: [
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-      ]
-    },
-    {
-      title: "Urban Residential Complex",
-      location: "Denver, Colorado", 
-      type: "Acquisition",
+      title: "9622 Kinder Lane (Build-to-STR Development)",
+      location: "Sunny Side, Houston, Texas",
+      type: "Build-to-Rent",
       status: "Completed",
-      profit: "$225,000+",
-      mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
+      profit: "$160,000+",
+      story: "We built this duplex back in 2019 by hiring a builder. I paid 37,500 for the land, and approximately 200K for construction. I sold this property for 430K 2 years later!",
+      mainImage: "/lovable-uploads/9622Kinder/IMG_4889.JPG",
       thumbnails: [
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
+        "/lovable-uploads/9622Kinder/IMG_LivingRoom_2.jpeg",
+        "/lovable-uploads/9622Kinder/IMG_MasterBath.JPG",
+        "/lovable-uploads/9622Kinder/IMG_MasterBedroom.jpeg",
       ]
     },
     {
-      title: "Commercial Office Tower",
-      location: "Phoenix, Arizona",
-      type: "Value-Add",
-      status: "In Progress",
-      profit: "$180,000+",
-      mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
+      title: "1021 Calvin Ave (Build-to-Sell Multifamily)",
+      location: "Acres Homes, Houston, Texas", 
+      type: "Build-to-Sell",
+      status: "Completed",
+      profit: "$100,000+",
+      story: "We purchased the land for this duplex for 45K and split it in half by subdividing it into two lots. On Lot 1 I built this duplex for 260K and sold it for 398K.",
+      mainImage: "/lovable-uploads/1021Calvin/IMG_Exterior.jpeg",
       thumbnails: [
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
+        "/lovable-uploads/1021Calvin/IMG_MasterBedroom.jpeg",
+        "/lovable-uploads/1021Calvin/IMG_LivingRoom.jpeg",
+        "/lovable-uploads/1021Calvin/IMG_MasterBath.jpeg",
+        "/lovable-uploads/1021Calvin/IMG_2ndBath.jpeg",
+        "/lovable-uploads/1021Calvin/IMG_Kitchen.jpeg",
+        "/lovable-uploads/1021Calvin/IMG_TwinBeds.jpeg",
       ]
     },
     {
-      title: "Luxury Retail Center",
-      location: "Miami, Florida",
-      type: "Development", 
-      status: "Planning",
-      profit: "$320,000+",
-      mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
+      title: "1017 Calvin Ave (Build-to-STR Multifamily)",
+      location: "Acres Homes, Houston, Texas",
+      type: "Build-to-STR",
+      status: "Completed",
+      profit: "$160,000+",
+      story: "This was the second duplex on Lot 2 that we previously purchased for 45K. We built this one for about 340K during the peak of the pandemic which may have been the worse time to build a property in america from a supply chain perspective in the last probably 50 years. We sold this project for the highest in the area at $550K.",
+      mainImage: "/lovable-uploads/1017Calvin/IMG_Exterior.jpg",
       thumbnails: [
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
-        "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
+        "/lovable-uploads/1017Calvin/IMG_EntryStairs.jpg",
+        "/lovable-uploads/1017Calvin/IMG_Kitchen_2.jpg",
+        "/lovable-uploads/1017Calvin/IMG_Kitchen_3.jpg",
+        "/lovable-uploads/1017Calvin/IMG_Kitchen.jpg",
+        "/lovable-uploads/1017Calvin/IMG_Living.jpg",
+        "/lovable-uploads/1017Calvin/IMG_MasterBedroom.jpg",
+        "/lovable-uploads/1017Calvin/IMG_MasterBath.jpg",
+        "/lovable-uploads/1017Calvin/IMG_2ndBath.jpg",
+        "/lovable-uploads/1017Calvin/IMG_Laundry.jpg",
+      ]
+    },
+    {
+      title: "4921 & 4923 Pederson St. (Build-to-Rent Multifamily)",
+      location: "South Side, Houston, Texas",
+      type: "Build-to-Rent", 
+      status: "Completed",
+      profit: "$200,000+",
+      story: "We completed these two duplexes at the end of last year (2024). Total build costs was around 460K all in per duplex which included land and holding costs. These duplexes appraised for 600K each. This is a prime example of the type of projects we invest in. These are the projects the generate great multiples on original capital invested.",
+      mainImage: "/lovable-uploads/PedersonSt/IMG_Exterior.jpg",
+      thumbnails: [
+        "/lovable-uploads/PedersonSt/IMG_Exterior_2.jpg",
+        "/lovable-uploads/PedersonSt/IMG_Exterior_Rear.jpg",
+        "/lovable-uploads/PedersonSt/IMG_Exterior_Rear_2.jpg",  
+        "/lovable-uploads/PedersonSt/IMG_StairEntry.jpg",
+        "/lovable-uploads/PedersonSt/IMG_StairEntry_Upstairs.jpg",
+        "/lovable-uploads/PedersonSt/IMG_Upstairs_Island.jpg",
+        "/lovable-uploads/PedersonSt/IMG_Balcony_2.jpg",
+        "/lovable-uploads/PedersonSt/IMG_LivingRoom.jpg",
+        "/lovable-uploads/PedersonSt/IMG_Kitchen.jpg",
+        "/lovable-uploads/PedersonSt/IMG_Hallway.jpg",
+        "/lovable-uploads/PedersonSt/IMG_2ndRoom.jpg",
+        "/lovable-uploads/PedersonSt/IMG_2ndBathroom.jpg",
+        "/lovable-uploads/PedersonSt/IMG_MasterBedroom.jpg",
+        "/lovable-uploads/PedersonSt/IMG_MasterBath.jpg",
       ]
     }
   ];
@@ -178,6 +214,7 @@ const DealsGallery = () => {
               key={index}
               {...deal}
               isReversed={index % 2 === 1}
+              rowIndex={index}
             />
           ))}
         </div>
