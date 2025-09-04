@@ -7,7 +7,7 @@ const Bio = () => {
       <div className="grid items-start gap-10 md:grid-cols-2">
         <div>
           <div className="flex items-center gap-6 mb-6">
-            <Avatar className="h-24 w-24 border-4 border-primary/20">
+            <Avatar className="h-32 w-32 border-4 border-primary/20">
               <AvatarImage 
                 src="/lovable-uploads/1560e76c-3e03-47d9-b330-2d7de0990775.png" 
                 alt="Lavon - Founder" 
@@ -58,6 +58,58 @@ const Bio = () => {
             </div>
           </div>
         </aside>
+      </div>
+      
+      {/* Team Member Section */}
+      <div className="mt-20 grid items-start gap-10 md:grid-cols-2">
+        <div>
+          <div className="flex items-center gap-6 mb-6">
+            <Avatar className="h-32 w-32 border-4 border-primary/20">
+              <AvatarImage 
+                src="/lovable-uploads/e1e389de-54a9-427a-a741-41110127af72.png" 
+                alt="Diana Woods - Team Member" 
+                className="object-cover"
+              />
+              <AvatarFallback>DW</AvatarFallback>
+            </Avatar>
+            <h2 className="text-3xl font-bold md:text-4xl">Diana Woods</h2>
+          </div>
+          <p className="mt-4 text-muted-foreground">
+            Diana brings extensive experience in investment analysis and portfolio management to our team. With a keen eye for market opportunities and risk assessment, she plays a crucial role in evaluating potential investments and ensuring our portfolio aligns with investor objectives.
+          </p>
+          <p className="mt-4 text-muted-foreground">
+            Her analytical approach and attention to detail help maintain the high standards of due diligence that our investors expect, while her communication skills ensure transparent and timely reporting throughout the investment lifecycle.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+            <li>• 8+ years in investment analysis and portfolio management</li>
+            <li>• Expertise in market research and financial modeling</li>
+            <li>• Focus on investor relations and transparent communication</li>
+          </ul>
+        </div>
+        <div className="rounded-xl border bg-card p-6">
+          <h3 className="text-lg font-semibold">Key Responsibilities</h3>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Diana oversees investment analysis, market research, and investor communications, ensuring our investment decisions are data-driven and our stakeholders remain informed throughout each project.
+          </p>
+          <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
+            <div className="rounded-lg bg-secondary p-4">
+              <p className="font-semibold">Analysis</p>
+              <p className="text-muted-foreground">Market research & due diligence</p>
+            </div>
+            <div className="rounded-lg bg-secondary p-4">
+              <p className="font-semibold">Communications</p>
+              <p className="text-muted-foreground">Investor relations</p>
+            </div>
+            <div className="rounded-lg bg-secondary p-4">
+              <p className="font-semibold">Reporting</p>
+              <p className="text-muted-foreground">Performance tracking</p>
+            </div>
+            <div className="rounded-lg bg-secondary p-4">
+              <p className="font-semibold">Strategy</p>
+              <p className="text-muted-foreground">Portfolio optimization</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
