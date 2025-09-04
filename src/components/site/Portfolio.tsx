@@ -39,7 +39,8 @@ const Portfolio = () => {
         <header className="max-w-xl">
           <h2 className="text-3xl font-bold md:text-4xl">Portfolio Highlights</h2>
           <p className="mt-3 text-muted-foreground">
-            A selection of representative projects across development and value-add strategies.
+            We have built up a proven track record of delivering strong returns, developing and operating high-quality residential properties in the Houston Texas market. We are vertically integrated, from pre-construction, to final exit either via sale or long term hold.
+            With a focus on risk-managed growth and investor-first transparency we want to help you achieve your investment goals. Allow us to help you build your wealth through real estate with strong returns.
           </p>
         </header>
         <div className="hidden md:block">
@@ -48,9 +49,9 @@ const Portfolio = () => {
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <DealCard title="Parkside Townhomes" subtitle="Build-to-rent development" metric="2.1x" location="Nashville, TN" />
-        <DealCard title="Riverside Flats" subtitle="Value-add multifamily" metric="1.8x" location="Austin, TX" />
-        <DealCard title="Elm Street Homes" subtitle="Infill new construction" metric="2.4x" location="Charlotte, NC" />
+        <DealCard title="9622 Kinder Lane" subtitle="Build-to-STR development" metric="2.1x" location="Sunny Side, Houston, TX" />
+        <DealCard title="1021 & 1017 Calvin Ave" subtitle="Build-to-Sell multifamily" metric="1.8x" location="Acres Homes, Houston, TX" />
+        <DealCard title="4921 & 4923 Pederson St." subtitle="Build-to-Rent multifamily" metric="2.4x" location="South Side, Houston, TX" />
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 rounded-xl border bg-card p-6 md:grid-cols-3">
