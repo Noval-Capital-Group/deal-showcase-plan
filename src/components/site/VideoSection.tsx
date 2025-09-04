@@ -12,9 +12,9 @@ const VideoSection = () => {
     <section className="relative w-full bg-background">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold md:text-5xl">See Our Process in Action</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">Invest With Us</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Watch how we transform properties and deliver exceptional returns for our investors
+            We have the track record of performance, the licensed expertise, and the team to execute with success.
           </p>
         </div>
         
