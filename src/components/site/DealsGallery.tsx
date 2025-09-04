@@ -1,5 +1,9 @@
+import { useState } from "react";
+import { ZoomIn } from "lucide-react";
 import BlobMosaic from "./BlobMosaic";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 interface DealRowProps {
   title: string;
@@ -22,6 +26,15 @@ const DealRow: React.FC<DealRowProps> = ({
   thumbnails, 
   isReversed = false 
 }) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const lightboxSlides = thumbnails.map(src => ({ src }));
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
   return (
     <div className={`flex flex-col lg:flex-row gap-8 items-center ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
       {/* Main Image */}
@@ -49,13 +62,23 @@ const DealRow: React.FC<DealRowProps> = ({
         {/* Thumbnails Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {thumbnails.map((thumb, index) => (
-            <div key={index} className="aspect-square">
+            <div 
+              key={index} 
+              className="aspect-square relative group cursor-pointer"
+              onClick={() => openLightbox(index)}
+            >
               <img
                 src={thumb}
                 alt={`${title} view ${index + 1}`}
-                className="h-full w-full object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                className="h-full w-full object-cover rounded-full opacity-80 group-hover:opacity-100 transition-opacity"
                 loading="lazy"
               />
+              {/* Hover Zoom Icon */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="bg-black/60 rounded-full p-3 animate-pulse">
+                  <ZoomIn className="w-6 h-6 text-white" />
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -67,6 +90,14 @@ const DealRow: React.FC<DealRowProps> = ({
             <p className="text-3xl md:text-4xl font-bold text-primary">{profit}</p>
           </div>
         </div>
+        
+        {/* Lightbox */}
+        <Lightbox
+          open={lightboxOpen}
+          close={() => setLightboxOpen(false)}
+          index={lightboxIndex}
+          slides={lightboxSlides}
+        />
       </div>
     </div>
   );
