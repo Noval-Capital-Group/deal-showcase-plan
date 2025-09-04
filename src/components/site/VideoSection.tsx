@@ -38,7 +38,7 @@ const VideoSection = () => {
           ) : (
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0"
+              src="https://www.youtube.com/embed/JLQ-jRF19uo"
               title="Investment Process Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
