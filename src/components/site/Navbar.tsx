@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <a href="#" className="flex items-center gap-3">
-          <img src="/lovable-uploads/7d55e99d-f4cb-433b-8efb-c5d1ff4fea8f.png" alt="Noval Capital Group logo" className="h-8 w-8" />
+          <img src="/lovable-uploads/7d55e99d-f4cb-433b-8efb-c5d1ff4fea8f.png" alt="Noval Capital Group logo" className="h-8 w-12" />
           <span className="font-semibold">Noval Capital Group</span>
         </a>
         <div className="hidden items-center gap-6 sm:flex">

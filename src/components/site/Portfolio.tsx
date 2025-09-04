@@ -1,6 +1,6 @@
 import { Building2, BarChart3, LineChart, MapPin } from "lucide-react";
 import BlobMosaic from "./BlobMosaic";
-import portfolio1 from "@/assets/portfolio-1.jpg";
+import portfolio1 from "/lovable-uploads/1017CalvinBuildSplitImage.jpg";
 
 interface DealCardProps {
   title: string;
