@@ -7,7 +7,7 @@ const Bio = () => {
         <div>
           <h2 className="text-3xl font-bold md:text-4xl">Founder Bio</h2>
           <p className="mt-4 text-muted-foreground">
-            With a background spanning acquisitions, development, and capital markets, our founder has led multidisciplinary teams delivering strong, risk-adjusted outcomes for private investors. The firm is built on three pillars: transparency, alignment, and disciplined execution.
+            With a background spanning acquisitions, development, and capital markets, our founder has led multidisciplinary teams delivering strong, risk-adjusted outcomes for private investors. The fund is built on three pillars: integrity, investors-first, and disciplined execution.
           </p>
           <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
             <li>• 10+ years across the real estate lifecycle</li>

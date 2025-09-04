@@ -22,7 +22,7 @@ const DealCard = ({ title, subtitle, metric, location }: DealCardProps) => (
     </header>
     <dl className="mt-4 flex items-center justify-between">
       <div>
-        <dt className="text-xs text-muted-foreground">Projected Equity Multiple</dt>
+        <dt className="text-xs text-muted-foreground">Realized Equity Multiple</dt>
         <dd className="text-xl font-bold">{metric}</dd>
       </div>
       <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -49,9 +49,9 @@ const Portfolio = () => {
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <DealCard title="9622 Kinder Lane" subtitle="Build-to-STR development" metric="2.1x" location="Sunny Side, Houston, TX" />
-        <DealCard title="1021 & 1017 Calvin Ave" subtitle="Build-to-Sell multifamily" metric="1.8x" location="Acres Homes, Houston, TX" />
-        <DealCard title="4921 & 4923 Pederson St." subtitle="Build-to-Rent multifamily" metric="2.4x" location="South Side, Houston, TX" />
+        <DealCard title="9622 Kinder Lane" subtitle="Build-to-STR development" metric="2.6x" location="Sunny Side, Houston, TX" />
+        <DealCard title="1021 & 1017 Calvin Ave" subtitle="Build-to-Sell multifamily" metric="1.4x" location="Acres Homes, Houston, TX" />
+        <DealCard title="4921 & 4923 Pederson St." subtitle="Build-to-Rent multifamily" metric="1.25x" location="South Side, Houston, TX" />
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 rounded-xl border bg-card p-6 md:grid-cols-3">

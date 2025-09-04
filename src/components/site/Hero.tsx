@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import heroImage from "@/assets/hero-investment.jpg";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, ShieldCheck, CalendarDays } from "lucide-react";
+import { TrendingUp, ShieldCheck, CalendarDays, Lock, Handshake } from "lucide-react";
 
 const Hero = () => {
   const [hasMotion, setHasMotion] = useState(true);
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-24 pb-16">
         <p className="text-sm uppercase tracking-widest text-muted-foreground">Private Real Estate Investments</p>
         <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
-          Returning investor capital <sup className="text-2xl md:text-4xl">n</sup>-fold through disciplined real estate
+          Returning investment <br />capital <sup className="text-2xl md:text-4xl underline">N</sup>-fold through ground up Real Estate development.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
           We acquire, develop, and operate cash-flowing assets with a focus on risk-managed growth and investor-first transparency.
@@ -46,7 +46,7 @@ const Hero = () => {
 
         <div className="mt-10 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
           <div className="rounded-lg border bg-card/60 p-4 backdrop-blur">
-            <p className="text-3xl font-bold">$50M+</p>
+            <p className="text-3xl font-bold">$5M+</p>
             <p className="text-sm text-muted-foreground">Total project volume</p>
           </div>
           <div className="rounded-lg border bg-card/60 p-4 backdrop-blur">
@@ -54,16 +54,17 @@ const Hero = () => {
             <p className="text-sm text-muted-foreground">Target IRR range</p>
           </div>
           <div className="rounded-lg border bg-card/60 p-4 backdrop-blur">
-            <p className="text-3xl font-bold">100% LP</p>
+            <p className="text-3xl font-bold">70% LP</p>
             <p className="text-sm text-muted-foreground">Preferred returns paid first</p>
           </div>
         </div>
 
         {hasMotion && (
-          <div className="pointer-events-none mt-12 flex items-center gap-6 opacity-80">
+          <div className="pointer-events-none mt-12 flex items-center gap-3 opacity-80">
             <ShieldCheck className="text-primary" />
+            <Handshake className="text-primary" />
             <p className="text-sm text-muted-foreground">
-              Institutional discipline. Boutique alignment.
+              Institutional discipline. SEC compliant. Boutique alignment.
             </p>
           </div>
         )}
