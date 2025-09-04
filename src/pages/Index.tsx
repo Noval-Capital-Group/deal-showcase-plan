@@ -2,6 +2,7 @@ import Navbar from "@/components/site/Navbar";
 import Hero from "@/components/site/Hero";
 import Portfolio from "@/components/site/Portfolio";
 import DealsGallery from "@/components/site/DealsGallery";
+import VideoSection from "@/components/site/VideoSection";
 import Bio from "@/components/site/Bio";
 import BookCall from "@/components/site/BookCall";
 import Footer from "@/components/site/Footer";
@@ -33,6 +34,7 @@ const Index = () => {
         <div className="brand-repeat">
           <Portfolio />
           <DealsGallery />
+          <VideoSection />
           <Bio />
           <BookCall />
         </div>
