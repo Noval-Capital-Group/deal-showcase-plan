@@ -20,6 +20,15 @@ const Bio = () => {
           <p className="mt-4 text-muted-foreground">
             Lavon is currently the Mortgage Broker / Owner of Multiculture Mortgage a Houston-based mortgage company offering a wide range of lending products to new homeowners and investors throughout the Southeast Coast. He is also an active Real Estate Investor / Developer / GC building wealth through multi-family housing in the Houston area. Lavon's unique skill set of lending and boots on the ground development is a very unique operator mix that lends to his success.
           </p>
+          <h2 className="text-3xl font-bold md:text-4xl">Founder Bio</h2>
+          <p className="mt-4 text-muted-foreground">
+            With a background spanning acquisitions, development, and capital markets, our founder has led multidisciplinary teams delivering strong, risk-adjusted outcomes for private investors. The fund is built on three pillars: integrity, investors-first, and disciplined execution.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+            <li>• 10+ years across the real estate lifecycle</li>
+            <li>• Track record in ground-up and value-add residential</li>
+            <li>• Investor-first structures with clear reporting</li>
+          </ul>
           <div className="mt-6">
             <Button asChild variant="link">
               <a href="#portfolio">See selected projects →</a>
