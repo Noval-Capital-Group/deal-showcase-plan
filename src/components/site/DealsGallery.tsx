@@ -6,6 +6,7 @@ interface DealRowProps {
   location: string;
   type: string;
   status: string;
+  profit: string;
   mainImage: string;
   thumbnails: string[];
   isReversed?: boolean;
@@ -15,7 +16,8 @@ const DealRow: React.FC<DealRowProps> = ({
   title, 
   location, 
   type, 
-  status, 
+  status,
+  profit,
   mainImage, 
   thumbnails, 
   isReversed = false 
@@ -47,15 +49,23 @@ const DealRow: React.FC<DealRowProps> = ({
         {/* Thumbnails Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {thumbnails.map((thumb, index) => (
-            <AspectRatio key={index} ratio={4/3}>
+            <div key={index} className="aspect-square">
               <img
                 src={thumb}
                 alt={`${title} view ${index + 1}`}
-                className="blob-mask h-full w-full object-cover rounded-lg opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                className="h-full w-full object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
                 loading="lazy"
               />
-            </AspectRatio>
+            </div>
           ))}
+        </div>
+        
+        {/* Profit Return Section */}
+        <div className="pt-6 border-t border-border/50">
+          <div className="text-center lg:text-left">
+            <p className="text-sm text-muted-foreground mb-2">Projected Return</p>
+            <p className="text-3xl md:text-4xl font-bold text-primary">{profit}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -69,6 +79,7 @@ const DealsGallery = () => {
       location: "Austin, Texas",
       type: "Development",
       status: "Active",
+      profit: "$150,000+",
       mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
       thumbnails: [
         "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
@@ -81,6 +92,7 @@ const DealsGallery = () => {
       location: "Denver, Colorado", 
       type: "Acquisition",
       status: "Completed",
+      profit: "$225,000+",
       mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
       thumbnails: [
         "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
@@ -92,7 +104,8 @@ const DealsGallery = () => {
       title: "Commercial Office Tower",
       location: "Phoenix, Arizona",
       type: "Value-Add",
-      status: "In Progress", 
+      status: "In Progress",
+      profit: "$180,000+",
       mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
       thumbnails: [
         "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
@@ -105,6 +118,7 @@ const DealsGallery = () => {
       location: "Miami, Florida",
       type: "Development", 
       status: "Planning",
+      profit: "$320,000+",
       mainImage: "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
       thumbnails: [
         "/lovable-uploads/1017CalvinBuildSplitImage.jpg",
