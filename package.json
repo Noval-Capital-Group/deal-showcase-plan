@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp -Rf dist/ www/",
-    "deploy": "vite build && cp -Rf dist/ www/",
+    "deploy": "vite build --mode production",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
