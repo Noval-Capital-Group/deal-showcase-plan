@@ -24,9 +24,11 @@ const Bio = () => {
             With a background spanning acquisitions, development, and capital markets, our founder has led multidisciplinary teams delivering strong, risk-adjusted outcomes for private investors. The fund is built on three pillars: integrity, investors-first, and disciplined execution.
           </p>
           <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-            <li>• 10+ years across the real estate lifecycle</li>
-            <li>• Track record in ground-up and value-add residential</li>
-            <li>• Investor-first structures with clear reporting</li>
+            <li>• 20+ years software engineering experience</li>
+            <li>• A Licensed Mortgage Broker</li>
+            <li>• 15+ years across the real estate lifecycle</li>
+            <li>• A recent 5+ year track record in ground-up and value-add residential construction management</li>
+            <li>• Manages Investor Communications, Advising & Reporting</li>
           </ul>
           <div className="mt-6">
             <Button asChild variant="link">
@@ -75,15 +77,20 @@ const Bio = () => {
             <h2 className="text-3xl font-bold md:text-4xl">Diana Woods</h2>
           </div>
           <p className="mt-4 text-muted-foreground">
-            Diana brings extensive experience in investment analysis and portfolio management to our team. With a keen eye for market opportunities and risk assessment, she plays a crucial role in evaluating potential investments and ensuring our portfolio aligns with investor objectives.
+            Diana Woods brings over 15 years of real estate management expertise to Noval Capital Group, specializing in property operations, investment sales, and market analysis. Her journey began in 2008 as the on-site manager of a large multifamily apartment community, where she gained firsthand experience overseeing leasing, maintenance coordination, and tenant relations at scale.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Her analytical approach and attention to detail help maintain the high standards of due diligence that our investors expect, while her communication skills ensure transparent and timely reporting throughout the investment lifecycle.
+            Since then, Diana has been instrumental in managing our portfolio of owned investment properties — including both long-term rentals and a growing number of short-term/mid-term Airbnb units. Her responsibilities span everything from day-to-day property oversight to leasing, maintenance management, and investor relationship management. She also leads all Comparable Market Analysis (CMA) work for new acquisitions and sales strategy, ensuring each project is aligned with the latest local comps and investor return goals.
+          </p>
+          <p className="mt-4 text-muted-foreground">
+            Since then, Diana has been instrumental in managing our portfolio of owned investment properties — including both long-term rentals and a growing number of short-term/mid-term Airbnb units. Her responsibilities span everything from day-to-day property oversight to leasing, maintenance management, and investor relationship management. She also leads all Comparable Market Analysis (CMA) work for new acquisitions and sales strategy, ensuring each project is aligned with the latest local comps and investor return goals.
           </p>
           <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-            <li>• 8+ years in investment analysis and portfolio management</li>
-            <li>• Expertise in market research and financial modeling</li>
-            <li>• Focus on investor relations and transparent communication</li>
+            <li>• A Licensed National Association Of Realtor Holder</li>
+            <li>• 15+ years of property & portfolio management experience</li>
+            <li>• Leads investment sales strategy and Comparable Market Analyses (CMAs)</li>
+            <li>• Manages day-to-day operations of all in-house LT rentals and STRs</li>
+            <li>• With a focus on investor relations and communication</li>
           </ul>
         </div>
         <div className="rounded-xl border bg-card p-6">
