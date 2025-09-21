@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-24 pb-16">
         <p className="text-sm uppercase tracking-widest text-muted-foreground">Private Real Estate Investments</p>
         <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
-          Returning investment <br />capital <sup className="text-2xl md:text-4xl underline">N</sup>-fold through ground up Real Estate development.
+          Returning investment <br />capital <sup className="text-2xl md:text-4xl underline">N</sup>-fold through ground-up Real Estate development.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
           We acquire, develop, and operate cash-flowing assets with a focus on risk-managed growth and investor-first transparency.
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
           <div className="rounded-lg border bg-card/60 p-4 backdrop-blur">
             <p className="text-3xl font-bold">1.8x+</p>
-            <p className="text-sm text-muted-foreground">Average Multiple On Capital</p>
+            <p className="text-sm text-muted-foreground">Projected Multiple</p>
           </div>
         </div>
 
