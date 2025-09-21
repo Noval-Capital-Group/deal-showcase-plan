@@ -137,7 +137,7 @@ const DealsGallery = () => {
       type: "Build-to-Sell",
       status: "Completed",
       profit: "$100,000+",
-      story: "We purchased the land for this duplex for 45K and split it in half by subdividing it into two lots. On Lot 1 I built this duplex for 260K and sold it for 398K.",
+      story: "We acquired the land for just $45,000 and immediately increased its value by subdividing it into two separate lots. On Lot 1, we constructed a brand-new duplex for approximately $260,000. Even before completion we had this duplex sold. That initial investment turned into a profitable sale of $398,000 which was the highest duplex in the area. Returning over 25% ROI to the original investor within 12 months. <br/>This project is a clear example of how strategic land acquisition and subdivision create built-in equity before construction even starts. By combining smart planning with efficient execution, we not only delivered quality new housing stock to the Acres Homes Houston market but also generated a strong return — demonstrating the repeatable build-to-sell model that drives our success.",
       mainImage: "/lovable-uploads/1021Calvin/IMG_Exterior.jpeg",
       thumbnails: [
         "/lovable-uploads/1021Calvin/IMG_MasterBedroom.jpeg",
