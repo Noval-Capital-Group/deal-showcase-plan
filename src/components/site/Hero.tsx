@@ -54,8 +54,8 @@ const Hero = () => {
             <p className="text-sm text-muted-foreground">Target IRR range</p>
           </div>
           <div className="rounded-lg border bg-card/60 p-4 backdrop-blur">
-            <p className="text-3xl font-bold">70% LP</p>
-            <p className="text-sm text-muted-foreground">Preferred returns paid first</p>
+            <p className="text-3xl font-bold">1.8x+</p>
+            <p className="text-sm text-muted-foreground">Average Multiple On Capital</p>
           </div>
         </div>
 
