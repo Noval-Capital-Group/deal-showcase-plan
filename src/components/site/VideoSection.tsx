@@ -1,7 +1,10 @@
 import { Play } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { HLSVideoPlayerRef } from "@/components/shared/HLSVideoPlayer";
+import HLSVideoPlayer from "@/components/shared/HLSVideoPlayer";
 
 const VideoSection = () => {
+  const videoPlayerRef = useRef<HLSVideoPlayerRef>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   
   const handlePlayVideo = () => {
@@ -9,45 +12,26 @@ const VideoSection = () => {
   };
 
   return (
-    <section className="relative w-full bg-background">
-      <div className="container mx-auto px-4 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold md:text-5xl">Invest With Us</h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            We have the track record of performance, the licensed expertise, and the team to execute with success.
-          </p>
-        </div>
-        
-        <div className="relative aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden bg-secondary">
-          {!isPlaying ? (
-            <div 
-              className="relative w-full h-full bg-gradient-to-br from-primary/20 to-secondary cursor-pointer group"
-              onClick={handlePlayVideo}
-            >
-              <div className="absolute inset-0 bg-black/20" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex items-center justify-center w-20 h-20 bg-primary rounded-full group-hover:scale-110 transition-transform duration-300">
-                  <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
-                </div>
-              </div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-semibold">Investment Overview</h3>
-                <p className="text-white/80">Click to play video</p>
-              </div>
-            </div>
-          ) : (
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/JLQ-jRF19uo"
-              title="Investment Process Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+    
+    <section className="w-full bg-black">
+      <div className="w-full">
+
+        {/* Video Container - Full screen width */}
+        <div className="w-full">
+          <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh]">
+            <HLSVideoPlayer
+              ref={videoPlayerRef}
+              videoUrl="https://vz-447b6532-fd2.b-cdn.net/1a6ce0a5-ac96-423c-b8f0-b3f61da9cb6a/playlist.m3u8"
+              autoPlay={true}
+              showControls={true}
+              className="w-screen h-full object-cover"
+              containerClassName="relative w-screen h-full"
             />
-          )}
+          </div>
         </div>
       </div>
     </section>
+
   );
 };
 
