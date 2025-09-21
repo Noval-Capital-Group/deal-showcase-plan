@@ -137,7 +137,7 @@ const DealsGallery = () => {
       type: "Build-to-Sell",
       status: "Completed",
       profit: "$100,000+",
-      story: "We acquired the land for just $45,000 and immediately increased its value by subdividing it into two separate lots. On Lot 1, we constructed a brand-new duplex for approximately $260,000. Even before completion we had this duplex sold. That initial investment turned into a profitable sale of $398,000 which was the highest duplex in the area. Returning over 25% ROI to the original investor within 12 months. <br/>This project is a clear example of how strategic land acquisition and subdivision create built-in equity before construction even starts. By combining smart planning with efficient execution, we not only delivered quality new housing stock to the Acres Homes Houston market but also generated a strong return — demonstrating the repeatable build-to-sell model that drives our success.",
+      story: "We acquired the land for just $45,000 and immediately increased its value by subdividing it into two separate lots. On Lot 1, we constructed a brand-new duplex for approximately $260,000. Even before completion we had this duplex sold. That initial investment turned into a profitable sale of $398,000 which was the highest duplex in the area. Returning over 25% ROI to the original investor within 12 months. \nThis project is a clear example of how strategic land acquisition and subdivision create built-in equity before construction even starts. By combining smart planning with efficient execution, we not only delivered quality new housing stock to the Acres Homes Houston market but also generated a strong return — demonstrating the repeatable build-to-sell model that drives our success.",
       mainImage: "/lovable-uploads/1021Calvin/IMG_Exterior.jpeg",
       thumbnails: [
         "/lovable-uploads/1021Calvin/IMG_MasterBedroom.jpeg",
@@ -154,7 +154,7 @@ const DealsGallery = () => {
       type: "Build-to-STR",
       status: "Completed",
       profit: "$160,000+",
-      story: "This was the second duplex on Lot 2 that we previously purchased for 45K. We built this one for about 340K during the peak of the pandemic which may have been the worse time to build a property in america from a supply chain perspective in the last probably 50 years. We sold this project for the highest in the area at $550K.",
+      story: "This was the second duplex developed on Lot 2 of a parcel we originally acquired for just $45,000. Construction costs came in around $340,000 — at the height of the pandemic, one of the most challenging times in modern history to build due to unprecedented supply chain disruptions. \nDespite those headwinds, the project proved to be a major success. Upon completion, we sold the property for $550,000 — setting another record for the neighborhood. This deal highlighted our ability to navigate market adversity, execute under pressure, and still deliver outsized returns through disciplined management and new-construction multifamily development.",
       mainImage: "/lovable-uploads/1017Calvin/IMG_Exterior.jpg",
       thumbnails: [
         "/lovable-uploads/1017Calvin/IMG_EntryStairs.jpg",
