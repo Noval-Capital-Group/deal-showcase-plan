@@ -173,8 +173,8 @@ const DealsGallery = () => {
       location: "South Side, Houston, Texas",
       type: "Build-to-Rent", 
       status: "Completed",
-      profit: "$200,000+",
-      story: "We completed these two duplexes at the end of last year (2024). Total build costs was around 460K all in per duplex which included land and holding costs. These duplexes appraised for 600K each. This is a prime example of the type of projects we invest in. These are the projects the generate great multiples on original capital invested.",
+      profit: "$200,000+ (Instant Equity 350K+ & In Depreciation Write-Offs) ",
+      story: "Completed at the end of 2024, these two duplexes represent the exact type of projects we target at Noval Capital. Each duplex carried an all-in cost of roughly $460,000, including land acquisition and holding costs. Upon stabilization, they appraised at $600,000 apiece — immediately creating substantial equity. \n\n This pair of build-to-rent multifamily homes demonstrates the power of our model: efficient construction, built-in appreciation, and strong cash flow potential. Deals like Pederson deliver not just consistent rental income, but also meaningful multiples on the original capital invested, making them a textbook example of our strategy in action.",
       mainImage: "/lovable-uploads/PedersonSt/IMG_Exterior.jpg",
       thumbnails: [
         "/lovable-uploads/PedersonSt/IMG_Exterior_2.jpg",
