@@ -123,7 +123,7 @@ const DealsGallery = () => {
       type: "Build-to-Rent",
       status: "Completed",
       profit: "$160,000+",
-      story: "We built this duplex back in 2019 by hiring a builder. I paid 37,500 for the land, and approximately 200K for construction. I sold this property for 430K 2 years later!",
+      story: "Back in 2019, we acquired the land for just $37,500 and put approximately $200,000 into new construction. Within two years, that $237,500 total investment turned into a sale at $430,000 — more than tripling our initial capital.",
       mainImage: "/lovable-uploads/9622Kinder/IMG_4889.JPG",
       thumbnails: [
         "/lovable-uploads/9622Kinder/IMG_LivingRoom_2.jpeg",
