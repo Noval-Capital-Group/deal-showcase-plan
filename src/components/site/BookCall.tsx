@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const BookCall = () => {
   return (
@@ -10,12 +12,21 @@ const BookCall = () => {
           Choose a time that works for you. We’ll discuss your goals, our process, and current opportunities.
         </p>
         <div className="mt-6">
-          <Button asChild size="lg" variant="hero">
-            {/* TODO: Replace with your actual calendar link */}
-            <a href="https://cal.com/your-name/intro" target="_blank" rel="noreferrer">
-              Open Calendar
-            </a>
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button size="lg" variant="hero">
+                Open Calendar
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-4xl h-[80vh] p-0">
+              <iframe
+                src="https://novalcapitalgroup.com/?fluent-booking=calendar&host=a10fa273_admin&event=investor-call-30min"
+                className="w-full h-full rounded-lg"
+                title="Book Investor Call"
+                frameBorder="0"
+              />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </section>
