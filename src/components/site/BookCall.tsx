@@ -18,7 +18,7 @@ const BookCall = () => {
                 Open Calendar
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-4xl h-[48vh] p-0">
+            <DialogContent className="max-w-4xl h-[62vh] sm:h-[48vh] p-0">
               <iframe
                 src="https://novalcapitalgroup.com/?fluent-booking=calendar&host=a10fa273_admin&event=investor-call-30min"
                 className="w-full h-full rounded-lg"
